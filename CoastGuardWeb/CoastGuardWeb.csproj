@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00541ACD-CBD2-473B-A1E2-BFED805026AC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoastGuardWeb</RootNamespace>
+    <AssemblyName>CoastGuardWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="DBInterface.Properties.Settings.Connectionstring-Deployment" Order="1">
+          <Destination Path="" />
+          <Object Type="dbFullSql">
+            <PreSource Path="Data Source=%28local%29%3bInitial Catalog=CoastGuard%3bPersist Security Info=True%3bUser ID=coastguard%3bPassword=%280astGuard%3bApplication Name=CoastGuardFE" ScriptSchema="True" ScriptData="True" CopyAllFullTextCatalogs="False" />
+            <Source Path="obj\Debug\AutoScripts\DBInterface.Properties.Settings.Connectionstring-Deployment_SchemaAndData.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+    <PublishDatabases>false</PublishDatabases>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <NoStdLib>true</NoStdLib>
+    <FileAlignment>1024</FileAlignment>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.9.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.9.0\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Alt\scripts\lib\script_loader.js" />
+    <Content Include="css\Find.css" />
+    <Content Include="main\EditEngine.htm" />
+    <Content Include="main\EditEngine.js" />
+    <Content Include="main\FindCRV.htm" />
+    <Content Include="main\FindCRV.js" />
+    <Content Include="main\ModifyCRV.htm" />
+    <Content Include="main\ModifyCRV.js" />
+    <Content Include="Reporting\Reports\vDrills.xml" />
+    <Content Include="Unit2Login.htm" />
+    <Content Include="Unit2Login.js" />
+    <Content Include="main\FindPeople.htm" />
+    <Content Include="main\FindPeople.js" />
+    <Content Include="scripts\lib\DataTablePlugIns.js" />
+    <Content Include="scripts\lib\date.format.js" />
+    <Content Include="scripts\lib\jquery-1.5.2.js" />
+    <Content Include="WordReport.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\BackgroundV2.png" />
+    <Content Include="images\CoastguardKaipara2.gif" />
+    <Content Include="images\CoastguardKaipara3.gif" />
+    <Content Include="images\CoastguardKaipara4.bmp" />
+    <Content Include="images\CoastguardKaipara4.gif" />
+    <Content Include="images\coastguard_logo.gif" />
+    <Content Include="images\RolloverButton.png" />
+    <Content Include="MainCSS.htm" />
+    <Content Include="css\images\selected.gif" />
+    <Content Include="css\Menu.css" />
+    <Content Include="css\Login.css" />
+    <Content Include="images\Add Log Button.png" />
+    <Content Include="images\Background.png" />
+    <Content Include="images\Banner Small.png" />
+    <Content Include="images\Banner.png" />
+    <Content Include="images\Grey Button.png" />
+    <Content Include="images\LargeBullet.png" />
+    <Content Include="images\Report Button.png" />
+    <Content Include="images\selected.gif" />
+    <Content Include="images\Small Bullett.png" />
+    <Content Include="Login.js" />
+    <Content Include="css\Alerts.css" />
+    <Content Include="Download.aspx" />
+    <Content Include="Header.js" />
+    <Content Include="css\demo_page.css" />
+    <Content Include="css\demo_table.css" />
+    <Content Include="css\demo_table_jui.css" />
+    <Content Include="css\images\back_disabled.jpg" />
+    <Content Include="css\images\back_enabled.jpg" />
+    <Content Include="css\images\favicon.ico" />
+    <Content Include="css\images\forward_disabled.jpg" />
+    <Content Include="css\images\forward_enabled.jpg" />
+    <Content Include="css\images\sort_asc.png" />
+    <Content Include="css\images\sort_asc_disabled.png" />
+    <Content Include="css\images\sort_both.png" />
+    <Content Include="css\images\sort_desc.png" />
+    <Content Include="css\images\sort_desc_disabled.png" />
+    <Content Include="Header.htm" />
+    <Content Include="css\jquery.timeentry.css" />
+    <Content Include="css\smoothness\images\ui-anim_basic_16x16.gif" />
+    <Content Include="css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\smoothness\jquery-ui-1.8.2.custom.css" />
+    <Content Include="images\back_disabled.jpg" />
+    <Content Include="images\back_enabled.jpg" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\forward_disabled.jpg" />
+    <Content Include="images\forward_enabled.jpg" />
+    <Content Include="images\sort_asc.png" />
+    <Content Include="images\sort_asc_disabled.png" />
+    <Content Include="images\sort_both.png" />
+    <Content Include="images\sort_desc.png" />
+    <Content Include="images\sort_desc_disabled.png" />
+    <Content Include="images\coastguard.jpg" />
+    <Content Include="css\images\spinnerDefault.png" />
+    <Content Include="css\images\spinnerDefaultBig.png" />
+    <Content Include="css\images\spinnerGem.png" />
+    <Content Include="css\images\spinnerGemBig.png" />
+    <Content Include="css\images\spinnerGreen.png" />
+    <Content Include="css\images\spinnerGreenBig.png" />
+    <Content Include="css\images\spinnerOrange.png" />
+    <Content Include="css\images\spinnerOrangeBig.png" />
+    <Content Include="css\images\spinnerSquare.png" />
+    <Content Include="css\images\spinnerSquareBig.png" />
+    <Content Include="css\images\spinnerText.png" />
+    <Content Include="css\images\spinnerTextBig.png" />
+    <Content Include="css\images\spinnerUpDown.png" />
+    <Content Include="css\images\spinnerUpDownBig.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Login.htm" />
+    <Content Include="main\ActivityWizard.htm" />
+    <Content Include="main\ActivityWizard.js" />
+    <Content Include="Alt\ModifyAttachment.htm" />
+    <Content Include="Alt\ModifyAttachment.js" />
+    <Content Include="main\Backup.htm" />
+    <Content Include="main\Backup.js" />
+    <Content Include="main\EditLookups.htm" />
+    <Content Include="main\EditLookups.js" />
+    <Content Include="main\Restore.htm" />
+    <Content Include="main\Restore.js" />
+    <Content Include="main\EditDestinations.htm" />
+    <Content Include="main\EditDestinations.js" />
+    <Content Include="main\EditRoleTypes.htm" />
+    <Content Include="main\EditRoleTypes.js" />
+    <Content Include="main\EditActivityTypes.htm" />
+    <Content Include="main\EditActivityTypes.js" />
+    <Content Include="main\ModifyProcedure.htm" />
+    <Content Include="main\ModifyProcedure.js" />
+    <Content Include="main\ModifyAlert.htm" />
+    <Content Include="main\ModifyAlert.js" />
+    <Content Include="main\FindAlerts.htm" />
+    <Content Include="main\ProcedureLog.htm" />
+    <Content Include="main\ProcedureLog.js" />
+    <Content Include="main\FindProcedures.htm" />
+    <Content Include="main\FindProcedures.js" />
+    <Content Include="main\FindAlerts.js" />
+    <Content Include="main\ModifyScenario.htm" />
+    <Content Include="main\ModifyScenario.js" />
+    <Content Include="main\FindScenarios.htm" />
+    <Content Include="main\FindScenarios.js" />
+    <Content Include="main\FindDrills.htm" />
+    <Content Include="main\FindDrills.js" />
+    <Content Include="main\Reports.js" />
+    <Content Include="main\ModifyDrill.js" />
+    <Content Include="main\Reports.htm" />
+    <Content Include="main\ModifyDrill.htm" />
+    <Content Include="main\ModifyCourse.js" />
+    <Content Include="main\ModifyCourse.htm" />
+    <Content Include="main\FindCourses.js" />
+    <Content Include="main\FindCourses.htm" />
+    <Content Include="main\ModifyUsers.js" />
+    <Content Include="main\ModifyUsers.htm" />
+    <Content Include="main\ModifyActivity.js" />
+    <Content Include="main\FindUsers.js" />
+    <Content Include="main\FindActivities.js" />
+    <Content Include="main\FindUsers.htm" />
+    <Content Include="main\ModifyActivity.htm" />
+    <Content Include="main\FindActivities.htm" />
+    <Content Include="main\Index.htm" />
+    <Content Include="main\scripts\lib\script_loader.js" />
+    <Content Include="main\timeEntryBasics.html" />
+    <Content Include="Report.aspx" />
+    <Content Include="Reporting\Reports\vFuelReport.xml" />
+    <Content Include="scripts\backendcallbacks.js" />
+    <Content Include="scripts\coastguard.js" />
+    <Content Include="scripts\cb.js" />
+    <Content Include="scripts\ddaccordion.js" />
+    <Content Include="scripts\message.js" />
+    <Content Include="scripts\lib\._jquery.dataTables.js" />
+    <Content Include="scripts\lib\browserDetect.js" />
+    <Content Include="scripts\lib\dw_loader.js" />
+    <Content Include="scripts\lib\IE9.js" />
+    <Content Include="scripts\lib\jquery-1.4.2.js" />
+    <Content Include="scripts\lib\jquery-1.4.2.min.js" />
+    <Content Include="scripts\lib\jquery-ui-1.8.2.custom.min.js" />
+    <Content Include="scripts\lib\jquery.dataTables.js" />
+    <Content Include="scripts\lib\jquery.dataTables.min.js" />
+    <Content Include="scripts\lib\jquery.jeditable.js" />
+    <Content Include="scripts\lib\jquery.json-2.2.js" />
+    <Content Include="scripts\lib\jquery.json2xml.js" />
+    <Content Include="scripts\lib\jquery.timeentry-cs.js" />
+    <Content Include="scripts\lib\jquery.timeentry.js" />
+    <Content Include="scripts\lib\script_loader.js" />
+    <Content Include="scripts\lib\stacktrace.js" />
+    <Content Include="scripts\lib\URLParam.js" />
+    <Content Include="scripts\lib\VirtualKeyboard.js" />
+    <Content Include="scripts\login.js" />
+    <Content Include="scripts\gen\backendcall.js" />
+    <Content Include="scripts\lib\cookies.js" />
+    <Content Include="scripts\lib\jquery-vsdoc.js" />
+    <Content Include="scripts\lib\jquery.corner.js" />
+    <Content Include="scripts\lib\jquery.selectboxes.js" />
+    <Content Include="scripts\lib\jquery.transform.js" />
+    <Content Include="scripts\lib\json2.js" />
+    <Content Include="scripts\lib\processing.js" />
+    <Content Include="scripts\lib\wwproxy.js" />
+    <Content Include="scripts\logger.js" />
+    <Content Include="CGBE.svc" />
+    <Content Include="scripts\mainUtils.js" />
+    <Content Include="scripts\PeriodicTasks.js" />
+    <Content Include="Upload.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Reporting\Reports\Hours Test.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hours Test.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reporting\Reports\UserBasic.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserBasic.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reporting\Reports\Drills.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Drills.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="WordReport.aspx.cs">
+      <DependentUpon>WordReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="WordReport.aspx.designer.cs">
+      <DependentUpon>WordReport.aspx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="css\Reporting\Reports\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="css\Reporting\Reports\R1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>R1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="css\Reporting\Reports\TripReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TripReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="css\Reporting\Reports\TripReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TripReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\Reports\Fuel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fuel.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reporting\Reports\TripReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TripReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BackEnd\BackEnd.csproj">
+      <Project>{6FA30EF7-C489-424C-8DBE-9D2A48ECF404}</Project>
+      <Name>BackEnd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBInterface\DBInterface.csproj">
+      <Project>{A0FECD3B-D0BF-4205-B128-452CFE9B71BB}</Project>
+      <Name>DBInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{B2E7DD1A-B5D7-4376-817E-BB1F6A0C2071}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="css\images\Sorting icons.psd" />
+    <None Include="images\Sorting icons.psd" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\dir.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\LocalDirecory.pubxml" />
+    <None Include="Properties\PublishProfiles\MyCoastGuardTest.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="css\Reporting\Reports\vTripReport" />
+    <None Include="Reporting\templates\TripReport.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="css\Reporting\Reports\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="css\Reporting\Reports\R1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>R1.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="css\Reporting\Reports\TripReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TripReport.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="css\Reporting\Reports\TripReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TripReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Reports\Hours Test.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Hours Test.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Reports\UserBasic.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>UserBasic.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Reports\Drills.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Drills.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Reports\Fuel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Fuel.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Reports\TripReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TripReport.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Alt\App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52734</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50538/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

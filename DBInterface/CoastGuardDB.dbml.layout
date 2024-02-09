@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 24, 29.375" name="CoastGuard">
+  <DataContextMoniker Name="/CoastGuardDataContext" />
+  <nestedChildShapes>
+    <classShape Id="64ba9c05-abb3-4628-9140-e4e8405c333a" absoluteBounds="0.75, 16.375, 2, 12.732078450520831">
+      <DataClassMoniker Name="/CoastGuardDataContext/Activity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9d3aea6-b589-4457-b2b0-c8764aef47ed" absoluteBounds="0.765, 16.835, 1.9700000000000002, 12.172078450520832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90f0e673-236a-4d6c-9e5d-975d5798cb4e" absoluteBounds="3.5, 20.875, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/CoastGuardDataContext/ActivityDestination" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef3a0b93-aa4b-48d8-9536-2afd7f33f609" absoluteBounds="3.515, 21.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ed98bdb2-69dc-40cf-b1aa-02814e37789b" absoluteBounds="3.5, 5.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CoastGuardDataContext/ActivityDrillMember" />
+      <nestedChildShapes>
+        <elementListCompartment Id="af84d2b4-f016-422a-88f0-ae5756b2e49e" absoluteBounds="3.515, 5.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f5dcb70e-bedc-4ddb-a17c-429972cdc9ea" absoluteBounds="0.75, 1, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/CoastGuardDataContext/ActivityDrill" />
+      <nestedChildShapes>
+        <elementListCompartment Id="427e4625-a63e-4744-b8fd-bdbff3d9f181" absoluteBounds="0.765, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb39e75d-f84a-41cb-95a8-0f0cf82f0087" absoluteBounds="3.5, 2.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CoastGuardDataContext/ActivityMember" />
+      <nestedChildShapes>
+        <elementListCompartment Id="39dfb9ee-1fb5-4ea4-bd15-96c61ea81b78" absoluteBounds="3.515, 2.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="00d4b1bf-e28c-4d93-ab7f-886b09252600" absoluteBounds="6.75, 6.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CoastGuardDataContext/ActivityPassanger" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41e9cb75-1c26-491c-a532-f85be60989fc" absoluteBounds="6.765, 7.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="27e7e904-7ae3-444c-aeb4-5f09bcbc655a" absoluteBounds="3.5, 8.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CoastGuardDataContext/ActivityScenarioMember" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d2b4177-c969-49b0-b98d-e5357637eebd" absoluteBounds="3.515, 8.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="41725100-032e-49c4-933f-61d0e39c1a7f" absoluteBounds="3.5, 23, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CoastGuardDataContext/ActivityScenario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb3f945b-531c-46f6-a220-d6cf6dee2ef7" absoluteBounds="3.515, 23.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cfb6dd79-336d-484e-8143-9352eb9486b6" absoluteBounds="9.75, 3.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CoastGuardDataContext/ActivityTrainerLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="51e5cfe5-9a01-4f8b-ab50-45735eab3809" absoluteBounds="9.765, 4.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af62675e-fbce-49a8-80bc-80205f7096ac" absoluteBounds="9.75, 6.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/CoastGuardDataContext/ActivityType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="38cd06ae-3677-4730-ab5b-831311803601" absoluteBounds="9.765, 7.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5adcde30-bbe7-48f9-bbf3-8203a41952cc" absoluteBounds="6.75, 9.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/CoastGuardDataContext/Alert" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f5af2da-ffd5-4c50-bc5e-b4e656806c16" absoluteBounds="6.765, 10.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f9b6bc46-c038-4960-aafd-56e15b330bcf" absoluteBounds="9.75, 9.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/CoastGuardDataContext/Attachment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5176061f-a87d-4ea9-8d21-9f8bee84ed01" absoluteBounds="9.765, 10.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fb63e8f3-b2d4-4768-8af9-ee51349c2996" absoluteBounds="0.75, 3.75, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/CoastGuardDataContext/CoastGuardMember" />
+      <nestedChildShapes>
+        <elementListCompartment Id="86b85232-3371-428d-8743-c91ce65c1ea9" absoluteBounds="0.765, 4.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d3a33ec-304f-4a03-bfeb-93a332178d01" absoluteBounds="12.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/CoastGuardDataContext/CoastguardRescueVessel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="327d7d8a-d1a3-4634-9f14-b83b3434e26c" absoluteBounds="12.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a9f8b25-cc26-43df-8c3c-160f56091359" absoluteBounds="6.75, 1, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/CoastGuardDataContext/Course" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3da80ff1-ad5f-4c5b-b6f9-f5f4af88ae7d" absoluteBounds="6.765, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a36ddcc-71de-4f1a-a0b7-3ec55b31bf69" absoluteBounds="12.75, 3.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/CoastGuardDataContext/CRV_Engine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04cf93a2-0cc4-4d90-b1d2-f9d19f8c2867" absoluteBounds="12.765, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="44bd501d-e90d-4b7d-ba5a-ddc4c11f66fc" absoluteBounds="12.75, 6.75, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/CoastGuardDataContext/Custom_Field" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c99950cd-31b8-42b1-b8d6-ab76884cacad" absoluteBounds="12.765, 7.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88f10e93-e2b5-49f9-b6ee-a2cabe8ff507" absoluteBounds="12.75, 9.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/CoastGuardDataContext/Custom_LookupItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d33c8142-576f-4b05-be72-ee4c518312ab" absoluteBounds="12.765, 10.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a950836-7665-476e-abc7-a3f24d8c6b83" absoluteBounds="12.75, 12.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/CoastGuardDataContext/Custom_Lookup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7bd95a1-f4b3-4816-a3f4-cb8ad3133d45" absoluteBounds="12.765, 13.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="658ced44-65b0-468f-9f4d-95db9a4ad2e0" absoluteBounds="6.75, 13.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/CoastGuardDataContext/Custom_Menu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b66aa2ef-b9d6-4016-99ce-1d908b278936" absoluteBounds="6.765, 14.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45833b7f-e672-4226-9f50-ac224bcb943f" absoluteBounds="15.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CoastGuardDataContext/Custom_MenuOption" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f70d8db-4f70-48b1-8b56-a6575a594353" absoluteBounds="15.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e96dc0aa-c840-476e-b6cf-c569fb92deff" absoluteBounds="15.75, 3.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/CoastGuardDataContext/Custom_Table" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a480431-c5c7-4ffd-a217-e3bd659c27ab" absoluteBounds="15.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e85d6dc1-8880-41b7-830a-bc9a583ac633" absoluteBounds="15.75, 6.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/CoastGuardDataContext/Destination" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d568ecd8-a7b7-4870-89f2-46a9f08eb284" absoluteBounds="15.765, 7.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a4755371-4a84-4618-9082-d809d4f08d70" absoluteBounds="9.5, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CoastGuardDataContext/DrilCourse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f69a987-d847-43bb-935a-2f44f54713f2" absoluteBounds="9.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2ecf6b5f-937f-4e87-9f38-261b6969e6c0" absoluteBounds="6.75, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/CoastGuardDataContext/Drill" />
+      <nestedChildShapes>
+        <elementListCompartment Id="82bd80bc-671a-425f-a569-5cb564f2519d" absoluteBounds="6.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc845b74-767a-4c3b-b802-791e50b6445a" absoluteBounds="9.75, 15.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/CoastGuardDataContext/Engine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ae00e41-e3f9-42b3-b037-3a8d6da6b329" absoluteBounds="9.765, 16.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="41b42567-e13d-428e-b240-634bdd322e8f" absoluteBounds="15.75, 10.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/CoastGuardDataContext/enum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f5184e10-905c-40b0-834d-6a5ee973a384" absoluteBounds="15.765, 11.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cdb1783f-8b3d-4c9c-930b-269256f6fcc7" absoluteBounds="15.75, 12.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CoastGuardDataContext/enumValue" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62b5e146-cfc2-49c6-88ab-4a44bb734551" absoluteBounds="15.765, 13.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="22575a56-062c-4b6b-8756-52fe45eb3019" absoluteBounds="12.75, 15.75, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/CoastGuardDataContext/FileUploadStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a091587-2d26-4f32-bd67-859c3517b561" absoluteBounds="12.765, 16.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f242d8e9-f8c2-4311-a2d3-18e8d7f22ad1" absoluteBounds="3.5, 11.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CoastGuardDataContext/MemberSetting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e13ab0b-5464-4d9d-94c0-3511155e18fc" absoluteBounds="3.515, 12.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5efcf135-f1b0-4520-9ded-9d4c10e78040" absoluteBounds="15.75, 15.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/CoastGuardDataContext/MenuSecurityLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a5a617f-5b3a-418c-b746-3ac062084f8f" absoluteBounds="15.765, 16.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="478e2567-7ec0-49a5-8a73-6f970a430d68" absoluteBounds="3.75, 16.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/CoastGuardDataContext/MessageLevel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c60233f1-bf9b-41ca-8541-077fed8a306e" absoluteBounds="3.765, 17.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a7039fd-5898-4cee-99f7-0b52512b35dc" absoluteBounds="18.75, 0.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/CoastGuardDataContext/Modification" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ddce027-195f-4acf-9600-cbaf6b416ed7" absoluteBounds="18.765, 1.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8d60155a-143c-40aa-9d46-d1b9de4115ab" absoluteBounds="18.75, 4.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/CoastGuardDataContext/Person" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d0cb5637-350d-4484-962d-91d12f5f14c6" absoluteBounds="18.765, 5.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="59758022-202f-4eb7-a137-941fd40fad7f" absoluteBounds="6.75, 18.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/CoastGuardDataContext/PortTideTime" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ccbfc56-6a2d-47dd-9fba-b3285603d0e7" absoluteBounds="6.765, 19.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e4082eae-830c-43f7-9268-ea2b286e8f26" absoluteBounds="18.75, 8.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/CoastGuardDataContext/ProcedureLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3f3a870-7061-4006-b1a5-fe00798cb9c5" absoluteBounds="18.765, 9.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f5aff89f-e2c4-47e9-826b-169284db1990" absoluteBounds="18.75, 11.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CoastGuardDataContext/Procedure" />
+      <nestedChildShapes>
+        <elementListCompartment Id="95ceff7e-2d70-4065-ad98-1629e6ff60b5" absoluteBounds="18.765, 12.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e52efa8d-6841-4ffd-ba49-ff71626d3471" absoluteBounds="18.75, 14.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/CoastGuardDataContext/Region" />
+      <nestedChildShapes>
+        <elementListCompartment Id="af2310be-d96a-4e22-aeef-a05b252ad25a" absoluteBounds="18.765, 15.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09547e0f-bed6-4869-96a4-0f0e220cd478" absoluteBounds="15.75, 18.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CoastGuardDataContext/Report" />
+      <nestedChildShapes>
+        <elementListCompartment Id="31ce67d7-901d-49b5-a6c8-14ab904398e7" absoluteBounds="15.765, 19.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c8efa61-cdbd-4c09-a4a1-581076d29705" absoluteBounds="0.75, 9.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CoastGuardDataContext/RoleType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d10cd26f-1636-4377-89a7-72bb19069e4e" absoluteBounds="0.765, 9.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9781987a-6be4-45ec-a94a-a31527f19475" absoluteBounds="18.75, 16.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/CoastGuardDataContext/Scenario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ddeba0e-133b-44c6-bf90-c30510cfef59" absoluteBounds="18.765, 17.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b9b7176a-7c1b-42d0-a9a2-4aaa657dff97" absoluteBounds="9.75, 19.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/CoastGuardDataContext/SchemaVersion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="295423f4-bd98-45d4-a810-997e964d1b0e" absoluteBounds="9.765, 20.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="92e3a41a-b8f3-46de-bc20-49b5c5976ae6" absoluteBounds="18.75, 19.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/CoastGuardDataContext/SecurityGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efe1d95f-67f3-4dfb-97c1-ee284d98db68" absoluteBounds="18.765, 20.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f244d793-f83e-469f-8f63-e524659a4acf" absoluteBounds="21.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CoastGuardDataContext/Session" />
+      <nestedChildShapes>
+        <elementListCompartment Id="616d9def-165d-4c58-a0ea-518b8ab200bd" absoluteBounds="21.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e331c5e0-d0ee-43f7-96ef-a71530ee8724" absoluteBounds="21.75, 3.75, 2, 3.6939111328124992">
+      <DataClassMoniker Name="/CoastGuardDataContext/TidePort" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6cd5ac62-2adb-44f0-b2d8-a4f4525cbb20" absoluteBounds="21.765, 4.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bea3a40f-1523-4e5a-b767-c065c9c6f961" absoluteBounds="21.75, 8.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/CoastGuardDataContext/TripStatistic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="255aae79-7b61-43f1-9d15-1731e995d468" absoluteBounds="21.765, 9.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e5240ee-d7ae-4b5a-9ca6-7a5079368399" absoluteBounds="21.75, 11.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CoastGuardDataContext/TripStatisticsTotal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4b91ce1f-9f36-4d9e-8836-23e3cef32c3b" absoluteBounds="21.765, 12.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b75e38ae-97c3-4a12-a524-a19e969c3e28" absoluteBounds="12.75, 21.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/CoastGuardDataContext/Unit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6fa2ad53-5bd7-4076-ae47-4fdd8bcf1553" absoluteBounds="12.765, 22.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="07f77514-9312-45c4-8058-c9c7fdc0e487" absoluteBounds="21.75, 14.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/CoastGuardDataContext/WCFEvent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e8696359-bb2d-461a-8af1-93c4f4ed8fe8" absoluteBounds="21.765, 15.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 21.5681469726563); (3.5 : 21.5681469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoastGuardDataContext/Activity/Activity_ActivityDestination" />
+      <nodes>
+        <classShapeMoniker Id="64ba9c05-abb3-4628-9140-e4e8405c333a" />
+        <classShapeMoniker Id="90f0e673-236a-4d6c-9e5d-975d5798cb4e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.3862939453125); (3.125 : 2.7612939453125); (3.125 : 5.70134726660156); (3.22916666666667 : 5.70134726660156 : JumpStart); (3.39583333333333 : 5.70134726660156 : JumpEnd); (3.5 : 5.70134726660156)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoastGuardDataContext/ActivityDrill/ActivityDrill_ActivityDrillMember" />
+      <nodes>
+        <classShapeMoniker Id="f5dcb70e-bedc-4ddb-a17c-429972cdc9ea" />
+        <classShapeMoniker Id="ed98bdb2-69dc-40cf-b1aa-02814e37789b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(0.75 : 16.375); (0.375 : 16); (0.375 : 2.7612939453125); (0.75 : 2.3862939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CoastGuardDataContext/Activity/Activity_ActivityDrill" />
+      <nodes>
+        <classShapeMoniker Id="64ba9c05-abb3-4628-9140-e4e8405c333a" />
+        <classShapeMoniker Id="f5dcb70e-bedc-4ddb-a17c-429972cdc9ea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 16.4365374615385); (3.3125 : 15.8740374615385); (3.3125 : 2.91429768880208); (3.5 : 2.91429768880208)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoastGuardDataContext/Activity/Activity_ActivityMember" />
+      <nodes>
+        <classShapeMoniker Id="64ba9c05-abb3-4628-9140-e4e8405c333a" />
+        <classShapeMoniker Id="eb39e75d-f84a-41cb-95a8-0f0cf82f0087" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 23.7892976888021); (3.5 : 23.7892976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoastGuardDataContext/Activity/Activity_ActivityScenario" />
+      <nodes>
+        <classShapeMoniker Id="64ba9c05-abb3-4628-9140-e4e8405c333a" />
+        <classShapeMoniker Id="41725100-032e-49c4-933f-61d0e39c1a7f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.35067363330078); (3.04166666666667 : 5.35067363330078 : JumpStart); (3.20833333333333 : 5.35067363330078 : JumpEnd); (3.22916666666667 : 5.35067363330078 : JumpStart); (3.39583333333333 : 5.35067363330078 : JumpEnd); (3.5 : 5.35067363330078)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoastGuardDataContext/CoastGuardMember/CoastGuardMember_ActivityDrillMember" />
+      <nodes>
+        <classShapeMoniker Id="fb63e8f3-b2d4-4768-8af9-ee51349c2996" />
+        <classShapeMoniker Id="ed98bdb2-69dc-40cf-b1aa-02814e37789b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.81153746153846); (2.9375 : 3.62403746153846); (2.9375 : 4.26609537760417); (3.06607443490112 : 4.13752094270304 : JumpStart); (3.18392556509888 : 4.01966981250529 : JumpEnd); (3.25357443490112 : 3.95002094270305 : JumpStart); (3.37142556509888 : 3.83216981250529 : JumpEnd); (3.5 : 3.70359537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CoastGuardDataContext/CoastGuardMember/CoastGuardMember_ActivityMember" />
+      <nodes>
+        <classShapeMoniker Id="fb63e8f3-b2d4-4768-8af9-ee51349c2996" />
+        <classShapeMoniker Id="eb39e75d-f84a-41cb-95a8-0f0cf82f0087" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.92542981430288); (2.9375 : 8.11292981430288); (2.9375 : 7.56128669586338); (3.12857443490112 : 7.7523611307645 : JumpStart); (3.24642556509888 : 7.87021226096226 : JumpEnd); (3.25357443490112 : 7.8773611307645 : JumpStart); (3.37142556509888 : 7.99521226096226 : JumpEnd); (3.50121330413662 : 8.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CoastGuardDataContext/CoastGuardMember/CoastGuardMember_ActivityScenarioMember" />
+      <nodes>
+        <classShapeMoniker Id="fb63e8f3-b2d4-4768-8af9-ee51349c2996" />
+        <classShapeMoniker Id="27e7e904-7ae3-444c-aeb4-5f09bcbc655a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 1.69314697265625); (9.5 : 1.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoastGuardDataContext/Course/Course_DrilCourse" />
+      <nodes>
+        <classShapeMoniker Id="9a9f8b25-cc26-43df-8c3c-160f56091359" />
+        <classShapeMoniker Id="a4755371-4a84-4618-9082-d809d4f08d70" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 5.45599609375); (9.59375 : 5.45599609375); (9.59375 : 2.45359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoastGuardDataContext/Drill/Drill_DrilCourse" />
+      <nodes>
+        <classShapeMoniker Id="2ecf6b5f-937f-4e87-9f38-261b6969e6c0" />
+        <classShapeMoniker Id="a4755371-4a84-4618-9082-d809d4f08d70" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.71769230769231 : 8.0208154296875); (3.125 : 8.42812312199519); (3.125 : 12.8277498372396); (3.22916666666667 : 12.8277498372396 : JumpStart); (3.39583333333333 : 12.8277498372396 : JumpEnd); (3.5 : 12.8277498372396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoastGuardDataContext/CoastGuardMember/CoastGuardMember_MemberSetting" />
+      <nodes>
+        <classShapeMoniker Id="fb63e8f3-b2d4-4768-8af9-ee51349c2996" />
+        <classShapeMoniker Id="f242d8e9-f8c2-4311-a2d3-18e8d7f22ad1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.18814281510417); (3.06607443490112 : 8.87206838020305 : JumpStart); (3.18392556509888 : 8.75421725000529 : JumpEnd); (3.1875 : 8.75064281510417); (3.1875 : 6.34019853320313); (3.22916666666667 : 6.34019853320312 : JumpStart); (3.39583333333333 : 6.34019853320313 : JumpEnd); (3.5 : 6.34019853320313)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoastGuardDataContext/RoleType/RoleType_ActivityDrillMember" />
+      <nodes>
+        <classShapeMoniker Id="6c8efa61-cdbd-4c09-a4a1-581076d29705" />
+        <classShapeMoniker Id="ed98bdb2-69dc-40cf-b1aa-02814e37789b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.47712159635417); (3.04166666666667 : 9.47712159635417 : JumpStart); (3.20833333333333 : 9.47712159635417 : JumpEnd); (3.22916666666667 : 9.47712159635417 : JumpStart); (3.39583333333333 : 9.47712159635417 : JumpEnd); (3.5 : 9.47712159635417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CoastGuardDataContext/RoleType/RoleType_ActivityScenarioMember" />
+      <nodes>
+        <classShapeMoniker Id="6c8efa61-cdbd-4c09-a4a1-581076d29705" />
+        <classShapeMoniker Id="27e7e904-7ae3-444c-aeb4-5f09bcbc655a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="94ec1098-81a1-4c72-abc8-7ce40eb8b579" absoluteBounds="15.375, 21.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/CoastGuardDataContext/CalculateTripStatistic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79ac2ead-0e7a-4b5d-a1f5-4fa0fb3b67fb" absoluteBounds="15.39, 22.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="03c78ca2-9c87-485c-9125-e8c3e8bbd397" absoluteBounds="21.375, 17.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/CoastGuardDataContext/ProcedureLastCompleted" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3978c8dc-4009-4218-af78-e4692946d4c1" absoluteBounds="21.39, 18.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5968a20e-a436-4ac0-ab90-21856131ddda" absoluteBounds="21.375, 20.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/CoastGuardDataContext/CoastguardRescueVesselDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c65b6f8d-f0f7-472b-8721-85065777695b" absoluteBounds="21.39, 21.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ce331e7f-3981-4be9-b447-14531332e031" absoluteBounds="9.375, 22.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/CoastGuardDataContext/CrewStatistic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4bae5796-9016-418a-a3cf-9d3a89a63ac4" absoluteBounds="9.39, 23.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b78f009a-ae35-4af2-a3a8-0c91b876767f" absoluteBounds="18.375, 23.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/CoastGuardDataContext/CrewStatisticsTotal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e5dc7706-29b6-4b1c-80bf-dbf075a1a956" absoluteBounds="18.39, 24.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

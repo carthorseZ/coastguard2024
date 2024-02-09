@@ -1,0 +1,4 @@
+﻿<%@ ServiceHost Language="C#"
+				Debug="false"
+				Service="BackEnd.CGBE"
+    Factory="System.ServiceModel.Activation.WebServiceHostFactory" %>

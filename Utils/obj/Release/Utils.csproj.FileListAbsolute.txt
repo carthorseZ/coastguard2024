@@ -1,0 +1,9 @@
+C:\Projects\coastguard\Utils\bin\Release\Utils.dll
+C:\Projects\coastguard\Utils\bin\Release\Utils.pdb
+C:\Projects\coastguard\Utils\bin\Release\log4net.dll
+C:\Projects\coastguard\Utils\bin\Release\log4net.xml
+C:\Projects\coastguard\Utils\obj\Release\Utils.csprojAssemblyReference.cache
+C:\Projects\coastguard\Utils\obj\Release\Utils.csproj.CoreCompileInputs.cache
+C:\Projects\coastguard\Utils\obj\Release\Utils.csproj.CopyComplete
+C:\Projects\coastguard\Utils\obj\Release\Utils.dll
+C:\Projects\coastguard\Utils\obj\Release\Utils.pdb

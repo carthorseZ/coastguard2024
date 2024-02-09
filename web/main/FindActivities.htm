@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<title>Find Trip</title>
+		<script src="scripts/lib/script_loader.js" type="text/javascript"></script>
+		<script type="text/javascript">slSubFrame();</script>
+</head>
+<body> 
+	<table style="width: 100%;">
+		<tr><td>Activity Type</td>
+		<td><select id="ActivityType" name="ActivityType" onchange=" ActivityTypeOnChange(this)"><option></option></select></td>
+			<td><span id="VesselLabel">Vessel</span></td><td><select id="Vessel" name="Vessel" onchange="vesselOnchange(this)">
+				<option></option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>From Date</td><td><input id="StartDate" type="text"/></td><td>To Date</td><td><input id="EndDate" type="text"/></td>
+		</tr>
+		<tr><td colspan="4">
+			<input id="FindActivities" type="button" onclick ="getActivities()" value="Find Activities" /></td></tr>
+		<tr><td colspan="4"><table cellpadding="0" cellspacing="0" border="0" class="display" id="Activities">
+		</table></td></tr>
+		<tr><td colspan="4">
+			<input id="AddActivity" type="button" value="Add New Activity" onclick="newActivity()" /></td></tr>
+		
+	</table>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<title>User</title>
+		<script src="scripts/lib/script_loader.js" type="text/javascript"></script>
+		<script type="text/javascript">slSubFrame();</script>
+</head>
+<body id="dt_example">
+	<table style="width: 100%;">
+<tr><td>User ID</td><td>
+	<input id="UserID" type="text" /></td><td>Password</td><td>
+	<input id="Password" type="password" /></td></tr>
+<tr><td>First Name</td><td>
+	<input id="FirstName" type="text" /></td><td>Last Name</td><td>
+	<input id="LastName" type="text" onchange="LastName_OnChange(this.value)"/></td></tr>
+<tr><td>Mobile</td><td>
+	<input id="Mobile" type="text" onchange="formatPhone(this)" /></td><td>Home</td><td>
+	<input id="Home" type="text" onchange="formatPhone(this)"/></td></tr>
+<tr><td>Work</td><td>
+	<input id="Work" type="text" onchange="formatPhone(this)"/></td><td>Email</td><td>
+	<input id="Email" type="text" /></td></tr>
+<tr><td>Skipper</td><td>
+	<input id="Skipper" type="checkbox" /></td><td>Senior</td><td><input id="Senior" type="checkbox" /></td></tr>
+<tr><td>Trainee</td><td>
+	<input id="Trainee" type="checkbox" /></td><td>Operational</td><td><input id="Operational" type="checkbox" /></td></tr>
+<tr><td>Deleted</td><td>
+	<input id="Deleted" type="checkbox" /></td><td></td><td></td></tr>
+<tr><td>Log Window Enabled</td><td>
+	<input id="LogWindow" type="checkbox" /></td><td>Log level</td><td><select id="LogLevel"></select></td></tr>
+<tr><td colspan="4" align="center">
+	<input id="Save" type="button" value="Save" onclick="Save_onclick()" /><input id="Cancel" 
+		type="button" value="Cancel" onclick="Cancel_onclick()" />
+		<input id="Update Statistics" 
+		type="button" value="Update Statistics" onclick="UpdateStats_onclick()" /></td></tr>
+		
+
+	</table>
+	
+</body>
+</html>

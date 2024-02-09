@@ -1,0 +1,44 @@
+﻿.menu_list
+{
+    width:160px;
+}
+.menu_head {
+padding: 0px 10px;
+font-family: “Myriad Pro”, Arial, Helvetica, Tahoma, sans-serif;
+color:#0000e5;
+	cursor: pointer;
+	position: relative;
+	margin:1px;
+	font-weight:normal;
+	background: #e6e5e5 url(left.png) center right no-repeat;
+}
+
+.menu_head_alt {
+	
+	padding: 5px 30px;
+	font-family: “Myriad Pro”, Arial, Helvetica, Tahoma, sans-serif;
+	color:#FFFFFF;
+	cursor: pointer;
+	position: relative;
+	margin:1px;
+	font-weight:normal;
+	background: #e6e5e5 url(../images/RollOverButton.png) center left no-repeat;
+}
+.menu_body {
+	display:none;
+}
+.menu_body a {
+  display:block;
+  font-family: “Myriad Pro”, Arial, Helvetica, Tahoma, sans-serif;
+  color:#0000e5;
+  background-color:#ffffff;
+  padding-left:20px;
+  font-weight:normal;
+  
+  text-decoration:none;
+}
+.menu_body a:hover {
+  color: #0000e5;
+  padding-left:20px;
+  background: #ffffff url(../images/LargeBullet.png) center left no-repeat;
+}

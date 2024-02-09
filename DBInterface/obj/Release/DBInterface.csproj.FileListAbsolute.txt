@@ -1,0 +1,15 @@
+C:\Projects\coastguard\DBInterface\bin\Release\DBInterface.dll.config
+C:\Projects\coastguard\DBInterface\bin\Release\DBInterface.dll
+C:\Projects\coastguard\DBInterface\bin\Release\DBInterface.pdb
+C:\Projects\coastguard\DBInterface\bin\Release\log4net.dll
+C:\Projects\coastguard\DBInterface\bin\Release\Newtonsoft.Json.dll
+C:\Projects\coastguard\DBInterface\bin\Release\ServiceStack.Text.dll
+C:\Projects\coastguard\DBInterface\bin\Release\Utils.dll
+C:\Projects\coastguard\DBInterface\bin\Release\Utils.pdb
+C:\Projects\coastguard\DBInterface\bin\Release\log4net.xml
+C:\Projects\coastguard\DBInterface\bin\Release\Newtonsoft.Json.xml
+C:\Projects\coastguard\DBInterface\obj\Release\DBInterface.csprojAssemblyReference.cache
+C:\Projects\coastguard\DBInterface\obj\Release\DBInterface.csproj.CoreCompileInputs.cache
+C:\Projects\coastguard\DBInterface\obj\Release\DBInterface.csproj.CopyComplete
+C:\Projects\coastguard\DBInterface\obj\Release\DBInterface.dll
+C:\Projects\coastguard\DBInterface\obj\Release\DBInterface.pdb

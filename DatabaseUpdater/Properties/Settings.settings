@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DatabaseUpdater.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Connectionstring" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server=(local);Database=CoastGuard;Trusted_connection=true;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CoastGuard" Class="CoastGuardDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=CoastGuard;Persist Security Info=True;User ID=coastguard;Application Name=CoastGuardFE" SettingsObjectName="DBInterface.Properties.Settings" SettingsPropertyName="CoastGuardConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Activities" Member="Activities">
+    <Type Name="Activity">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Skipper" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DepartTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ReturnTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="POB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Weather" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UnusualWeather" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="WaterTemp" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AirTemp" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="BarometicPresure" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="StartupProcedures" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="StartupProceduresComment" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="StatupProceduresInitial" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WeeklyChecks" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="WeeklyChecksComment" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="WeeklyChecksInitial" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="MonthlyChecks" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MonthlyChecksComment" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="MonthlyChecksInitial" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Maintenance" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MaintenanceComment" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="MaintenanceInitial" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SafetyCheck" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SafetyCheckComment" Type="System.String" DbType="NVarChar(512) NOT NULL" CanBeNull="false" />
+      <Column Name="SafetyCheckInitial" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RadioCheck" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RadioCheckComments" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="RadioCheckInitial" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="SecondaryWeather" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VoyageDetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EnginePortRunHours" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="EnginePortTotalHours" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="EnginePortOilAdded" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="EngineStarboardRunHours" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="EngineStarboardTotalHours" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="EngineStarboardOilAdded" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="FirepumpStarted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PostOperationChecks" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NavHazards" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NavHazardsDetails" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="Faults" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Actions" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SafetyOfficerAdvised" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DateSafetyOfficerAdvised" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompletedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ActivityType" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="LogNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AdditionalPOB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SeaState" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WindDirection" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="NText" CanBeNull="true" />
+      <Column Name="EngineFuelLitres" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="EngineFuelDollars" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Trainer" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CRV" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="EnginePort" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="EngineStarboard" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="EngineMiddle" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="Activity_ActivityDestination" Member="ActivityDestinations" ThisKey="id" OtherKey="Activity" Type="ActivityDestination" />
+      <Association Name="Activity_ActivityDrill" Member="ActivityDrills" ThisKey="id" OtherKey="Activity" Type="ActivityDrill" />
+      <Association Name="Activity_ActivityMember" Member="ActivityMembers" ThisKey="id" OtherKey="Tripid" Type="ActivityMember" />
+      <Association Name="Activity_ActivityScenario" Member="ActivityScenarios" ThisKey="id" OtherKey="Activity" Type="ActivityScenario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActivityDestinations" Member="ActivityDestinations">
+    <Type Name="ActivityDestination">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Activity" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Destination" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Activity_ActivityDestination" Member="Activity1" ThisKey="Activity" OtherKey="id" Type="Activity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActivityDrillMembers" Member="ActivityDrillMembers">
+    <Type Name="ActivityDrillMember">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ActivityDrill" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="MemberId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="ActivityDrill_ActivityDrillMember" Member="ActivityDrill1" ThisKey="ActivityDrill" OtherKey="id" Type="ActivityDrill" IsForeignKey="true" />
+      <Association Name="CoastGuardMember_ActivityDrillMember" Member="CoastGuardMember" ThisKey="MemberId" OtherKey="id" Type="CoastGuardMember" IsForeignKey="true" />
+      <Association Name="RoleType_ActivityDrillMember" Member="RoleType" ThisKey="RoleId" OtherKey="id" Type="RoleType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActivityDrills" Member="ActivityDrills">
+    <Type Name="ActivityDrill">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DrillId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Activity" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="ActivityDrill_ActivityDrillMember" Member="ActivityDrillMembers" ThisKey="id" OtherKey="ActivityDrill" Type="ActivityDrillMember" />
+      <Association Name="Activity_ActivityDrill" Member="Activity1" ThisKey="Activity" OtherKey="id" Type="Activity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActivityMember" Member="ActivityMembers">
+    <Type Name="ActivityMember">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tripid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="MemberId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="Activity_ActivityMember" Member="Activity" ThisKey="Tripid" OtherKey="id" Type="Activity" IsForeignKey="true" />
+      <Association Name="CoastGuardMember_ActivityMember" Member="CoastGuardMember" ThisKey="MemberId" OtherKey="id" Type="CoastGuardMember" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActivityPassangers" Member="ActivityPassangers">
+    <Type Name="ActivityPassanger">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Activity" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Person" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Comments" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActivityScenarioMembers" Member="ActivityScenarioMembers">
+    <Type Name="ActivityScenarioMember">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ActivityScenario" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Role" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Member" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="CoastGuardMember_ActivityScenarioMember" Member="CoastGuardMember" ThisKey="Member" OtherKey="id" Type="CoastGuardMember" IsForeignKey="true" />
+      <Association Name="RoleType_ActivityScenarioMember" Member="RoleType" ThisKey="Role" OtherKey="id" Type="RoleType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActivityScenarios" Member="ActivityScenarios">
+    <Type Name="ActivityScenario">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Activity" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Scenario" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="Activity_ActivityScenario" Member="Activity1" ThisKey="Activity" OtherKey="id" Type="Activity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActivityTrainerLink" Member="ActivityTrainerLinks">
+    <Type Name="ActivityTrainerLink">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Activity" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PersonRecordId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PersonEntityID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActivityTypes" Member="ActivityTypes">
+    <Type Name="ActivityType">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsWaterBased" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Alerts" Member="Alerts">
+    <Type Name="Alert">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fields" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="[Where]" Member="Where" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="[Level]" Member="Level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Tables" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Attachments" Member="Attachments">
+    <Type Name="Attachment">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DateUpdated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(512) NOT NULL" CanBeNull="false" />
+      <Column Name="Path" Type="System.String" DbType="NVarChar(512) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="ParentType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ParentId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Bytes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CoastGuardMembers" Member="CoastGuardMembers">
+    <Type Name="CoastGuardMember">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="First_Name" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Last_Name" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Home" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[Work]" Member="Work" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Skipper" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Trainee" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Operational" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Senior" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="DateJoined" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="CoastGuardMember_ActivityDrillMember" Member="ActivityDrillMembers" ThisKey="id" OtherKey="MemberId" Type="ActivityDrillMember" />
+      <Association Name="CoastGuardMember_ActivityMember" Member="ActivityMembers" ThisKey="id" OtherKey="MemberId" Type="ActivityMember" />
+      <Association Name="CoastGuardMember_ActivityScenarioMember" Member="ActivityScenarioMembers" ThisKey="id" OtherKey="Member" Type="ActivityScenarioMember" />
+      <Association Name="CoastGuardMember_MemberSetting" Member="MemberSetting" ThisKey="id" OtherKey="MemberId" Type="MemberSetting" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CoastguardRescueVessel" Member="CoastguardRescueVessels">
+    <Type Name="CoastguardRescueVessel">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Courses" Member="Courses">
+    <Type Name="Course">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="Course_DrilCourse" Member="DrilCourses" ThisKey="Id" OtherKey="CourseID" Type="DrilCourse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CRV_Engine" Member="CRV_Engines">
+    <Type Name="CRV_Engine">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CRV" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Engine" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CurrentHours" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Custom_Fields" Member="Custom_Fields">
+    <Type Name="Custom_Field">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="TableName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FieldName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Caption" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Custom_LookupItems" Member="Custom_LookupItems">
+    <Type Name="Custom_LookupItem">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Lookup" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SortOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Custom_Lookups" Member="Custom_Lookups">
+    <Type Name="Custom_Lookup">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Custom_Menu" Member="Custom_Menus">
+    <Type Name="Custom_Menu">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="height" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="width" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Custom_MenuOptions" Member="Custom_MenuOptions">
+    <Type Name="Custom_MenuOption">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="menu" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="link" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="sortorder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Custom_Tables" Member="Custom_Tables">
+    <Type Name="Custom_Table">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Destinations" Member="Destinations">
+    <Type Name="Destination">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="LogCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DrilCourses" Member="DrilCourses">
+    <Type Name="DrilCourse">
+      <Column Name="DrillCourseID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DrillID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CourseID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="Course_DrilCourse" Member="Course" ThisKey="CourseID" OtherKey="Id" Type="Course" IsForeignKey="true" />
+      <Association Name="Drill_DrilCourse" Member="Drill" ThisKey="DrillID" OtherKey="id" Type="Drill" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Drills" Member="Drills">
+    <Type Name="Drill">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NChar(120) NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="Drill_DrilCourse" Member="DrilCourses" ThisKey="id" OtherKey="DrillID" Type="DrilCourse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Engine" Member="Engines">
+    <Type Name="Engine">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SerialNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hours" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.enums" Member="enums">
+    <Type Name="enum">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.enumValues" Member="enumValues">
+    <Type Name="enumValue">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="type" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FileUploadStatus" Member="FileUploadStatus">
+    <Type Name="FileUploadStatus">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DateUploadStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateUploadComplete" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TotalBytes" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BytesUploaded" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FileName" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="Path" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="session" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MemberSettings" Member="MemberSettings">
+    <Type Name="MemberSetting">
+      <Column Name="MemberId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LogEnabled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LogLevel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="Timeformat" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="DateFormat" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="TimeZone" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="CoastGuardMember_MemberSetting" Member="CoastGuardMember" ThisKey="MemberId" OtherKey="id" Type="CoastGuardMember" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MenuSecurityLink" Member="MenuSecurityLinks">
+    <Type Name="MenuSecurityLink">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AccessType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccessObject" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="AccessLevel" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MessageLevels" Member="MessageLevels">
+    <Type Name="MessageLevel">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Modifications" Member="Modifications">
+    <Type Name="Modification">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RaisedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwnedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Assigned" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="EstimatedHourss" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ActualHours" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Due" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Assessed" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Person" Member="Persons">
+    <Type Name="Person">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HomePhone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MobilePhone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="WorkPhone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PortTideTimes" Member="PortTideTimes">
+    <Type Name="PortTideTime">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Time1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="H1" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Time2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="H2" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Time3" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="H3" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Time4" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="H4" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="PTime1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PH1" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="PTime2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PH2" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="NTime1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NH1" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="NTime2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Port" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="NH2" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProcedureLog" Member="ProcedureLogs">
+    <Type Name="ProcedureLog">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProcedureId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="MemberId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DateCompleted" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Comments" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ActivityId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Procedures" Member="Procedures">
+    <Type Name="Procedure">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Region" Member="Regions">
+    <Type Name="Region">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Reports" Member="Reports">
+    <Type Name="Report">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Views" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Parameters" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RoleTypes" Member="RoleTypes">
+    <Type Name="RoleType">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="RoleType_ActivityDrillMember" Member="ActivityDrillMembers" ThisKey="id" OtherKey="RoleId" Type="ActivityDrillMember" />
+      <Association Name="RoleType_ActivityScenarioMember" Member="ActivityScenarioMembers" ThisKey="id" OtherKey="Role" Type="ActivityScenarioMember" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Scenarios" Member="Scenarios">
+    <Type Name="Scenario">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SchemaVersions" Member="SchemaVersions">
+    <Type Name="SchemaVersion">
+      <Column Name="SchemaVersionID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VersionNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SourceIdentifier" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ScriptName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Applied" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SecurityGroups" Member="SecurityGroups">
+    <Type Name="SecurityGroup">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sessions" Member="Sessions">
+    <Type Name="Session">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Memberid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="LogEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LogLevel" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TidePorts" Member="TidePorts">
+    <Type Name="TidePort">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="HW" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="LW" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="MHWS" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="MHWN" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="MLWN" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="MLWS" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="MSL" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="ration" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="isPrimaryPort" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PrimaryPort" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Area" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TripStatistics" Member="TripStatistics">
+    <Type Name="TripStatistic">
+      <Column Name="Userid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TripCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SkipperTripCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TripStatisticsTotals" Member="TripStatisticsTotals">
+    <Type Name="TripStatisticsTotal">
+      <Column Name="memberid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CrewHours" Type="System.Decimal" DbType="Decimal(38,7)" CanBeNull="true" />
+      <Column Name="SkipperHours" Type="System.Decimal" DbType="Decimal(38,7)" CanBeNull="true" />
+      <Column Name="TotalHours" Type="System.Decimal" DbType="Decimal(38,7)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Unit" Member="Units">
+    <Type Name="Unit">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WCFEvents" Member="WCFEvents">
+    <Type Name="WCFEvent">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="session" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="objectstr" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="Region" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CalculateTripStatistics" Member="CalculateTripStatistics">
+    <Type Name="CalculateTripStatistic">
+      <Column Name="MemberId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="TripCoun" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="skippertripcount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProcedureLastCompleted" Member="ProcedureLastCompleteds">
+    <Type Name="ProcedureLastCompleted">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LastDateCompleted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CoastguardRescueVesselDetails" Member="CoastguardRescueVesselDetails">
+    <Type Name="CoastguardRescueVesselDetail">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="PortEngine" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="StarboardEngine" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="MiddleEngine" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CrewStatistics" Member="CrewStatistics">
+    <Type Name="CrewStatistic">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="First_Name" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Last_Name" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Home" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[Work]" Member="Work" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Skipper" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Trainee" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Operational" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Senior" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="DateJoined" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TripCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SkipperTripCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CrewStatisticsTotals" Member="CrewStatisticsTotals">
+    <Type Name="CrewStatisticsTotal">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="First_Name" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Last_Name" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Home" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[Work]" Member="Work" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Skipper" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Trainee" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Operational" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Senior" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="CrewHours" Type="System.Decimal" DbType="Decimal(38,7)" CanBeNull="true" />
+      <Column Name="SkipperHours" Type="System.Decimal" DbType="Decimal(38,7)" CanBeNull="true" />
+      <Column Name="TotalHours" Type="System.Decimal" DbType="Decimal(38,7)" CanBeNull="true" />
+      <Column Name="Unit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Add Activity</title>
+		<script src="scripts/lib/script_loader.js" type="text/javascript"></script>
+        <script type="text/javascript">slSubFrame();</script>
+</head>
+<body id="dt_example">
+    <div id="MainDiv" title="Main"><table id="MainTable" name="MainTable" style="width: 100%;"><tbody>
+
+    
+        <tr>
+        <td>Log No</td>
+        <td><span id="LogNo"></span></td>
+        <td>Activity Type</td>
+        <td><select id="ActivityType" name="ActivityType" onchange="activityOnChange(this)"><option></option></select></td>
+        
+
+        </tr>        
+        <tr>
+            <td>Skipper</td>
+            <td><select id="Skippers" name="Skippers" onchange="skipperOnchange(this)">
+                    <option></option>
+                </select></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>Date</td><td><input id="ActivityDate" type="text" onchange="dateOnChange(this)" /></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>Depart Time</td>
+            <td colspan="2"><input id="DepartTime" type="text" /></td>
+            <td>Return Time</td>
+            <td colspan="2"><input id="ReturnTime" type="text" /></td>
+        </tr>
+        </tbody></table></div>
+        <div id="CrewDiv" title="Crew"><table id="CrewDivTable" name="CrewDivTable" style="width: 100%;"><tbody>
+        
+        <tr>
+            <td>
+                Crew</td>
+            <td colspan=3><table id="CrewTable" name="CrewTable"><tbody></tbody></table></td>
+        </tr>
+        </tbody></table></div>
+        <div id="Main2Div" title="Main2"><table id="Main2Table" name="Main2Table" style="width: 100%;"><tbody>
+        <tr>
+            <td>Callsign</td>
+            <td colspan="5"><span id="Callsign"></span></td>
+        </tr>
+        <tr><td>Pob</td><td><input id="POB" type="text" /></td><td>Weather</td><td>
+            <select id="Weather" name="Weather">
+                <option></option>
+                    <option>test</option>
+            </select></td><td>Secondary Weather</td><td><select id="SecondaryWeather">
+                <option></option>
+                    <option>test</option>
+            </select></td></tr>
+        <tr>
+            <td>Unusual Weather</td>
+            <td colspan="3">
+                <textarea id="UnusualWeather"  rows="2" cols="1" style="width: 100%; height: 20px"></textarea></td>
+        </tr> 
+        <tr><td>Water Temp</td><td><input id="WaterTemp" type="text"/></td><td>Air Temp</td><td><input id="AirTemp" type="text"/></td><td>Barometric Preasure</td><td><input id="Barometric" type="text"/></td></tr>   
+        </tbody></table></div>
+        <div id="TidesDiv" title="Tides"><table id="TidesTable" name="TidesTable" style="width: 100%;"><tbody>
+        
+        <tr><td colspan="6"><table cellpadding="0" cellspacing="0" border="0" class="display" id="Tides">
+        <thead><tr><th colspan="2">Port Taranaki</th><th colspan="2">Helensville</th><th colspan ="2">Shelly Beach</th><th colspan="2">Pouto</th><th colspan="2">Whakapirau</th>
+                            <th colspan="2">Dargaville</th></tr>
+        <tr><th>H</th><th>L</th><th>H</th><th>L</th><th>H</th><th>L</th><th>H</th><th>L</th><th>H</th><th>L</th>
+            <th>H</th><th>L</th></tr></thead>
+        <tbody>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td></tr>
+        </tbody>
+ </table></td></tr>
+ </tbody></table></div>
+        <div id="ChecksDiv" title="Checks"><table id="ChecksTable" name="ChecksTable" style="width: 100%;"><tbody>
+        
+        <tr><td colspan="6"><table>
+        <tr><td class="style2">Pre departure checks</td><td>&nbsp;</td><td>Comments</td><td>
+            Initial</td></tr>
+        <tr><td class="style2">Startup procedures completed</td><td>
+            <input id="StartupProcedure" type="checkbox" /></td><td>
+                <input id="StartupProcedureComment" type="text" /></td><td>
+                <input id="StartupProcedureInitial" type="text" /></td></tr>
+        <tr><td class="style2">Weekly checks completed</td><td>
+            <input id="WeeklyCheck" type="checkbox" /></td><td>
+                <input id="WeeklyCheckComment" type="text" /></td><td>
+                <input id="WeeklyCheckInitial" type="text" /></td></tr>
+        <tr><td class="style2">Monthly checks completed</td><td>
+            <input id="MonthlyCheck" type="checkbox" /></td><td>
+                <input id="MonthlyCheckComment" type="text" /></td><td>
+                <input id="MonthlyCheckInitial" type="text" /></td></tr>
+        <tr><td class="style2">Maintenance undertaken</td><td>
+                            <input id="Maintenance" type="checkbox" /></td><td>
+                                <input id="MaintenanceComment" type="text" /></td><td>
+                                <input id="MaintenanceInitial" type="text" /></td></tr>
+        <tr><td class="style2">Safety equipment check</td><td>
+                            <input id="SafetyCheck" type="checkbox" /></td><td>
+                                <input id="SafetyCheckComment" type="text" /></td><td>
+                                <input id="SafetyCheckInitial" type="text" /></td></tr>
+        <tr><td class="style2">Radio Check</td><td>
+                            <input id="RadioCheck" type="checkbox" /></td><td>
+                                <input id="RadioCheckComment" type="text" /></td><td>
+                                <input id="RadioCheckInitial" type="text" /></td></tr>
+        </table></td></tr>
+        <tr>
+            <td>
+                Notes</td>
+            <td colspan="3">
+                <textarea id="TextArea1" name="S1" rows="2" cols="1" style="width: 100%; height: auto"></textarea></td>
+        </tr>
+        </tbody></table></div>
+        <div id="ButtonsDiv" title="Buttons"><table id="ButtonsTable" name="ButtonsTable" style="width: 100%;"><tbody>
+        <tr>
+            <td align="center" colspan="4">
+                <input id="Save" type="button" value="Save" onclick="return Save_onclick()" />&nbsp;&nbsp;&nbsp;
+                <input id="Cancel" type="button" value="Cancel" onclick="return Cancel_onclick()"/>
+                <input id="Print" type="button" value="Print" onclick="return Print_onclick()"/>
+                <input id="Procedures" type="button" value="Procedures" onclick="return Procedures_onclick()"/>
+                <input id="Scenarios" type="button" value="Scenarios" onclick="return Scenarios_onclick()"/>
+                <input id="Drills" type="button" value="Drills" onclick="return Drills_onclick()"/>
+                </td>
+        </tr>
+        </tbody>
+    </table></div>
+    <div id="ProcedureDiv" title="Procedures"><table id="ProcedureTable" name="ProcedureTable"><tbody></tbody></table></div>
+    <div id="ScenarioDiv" title="Scenarios"><table id="ScenarioTable" name="ScenarioTable"><tbody></tbody></table></div>
+    <div id="DrillDiv" title="Drills"><table id="DrillTable" name="DrillTable"><tbody></tbody></table></div>
+</body>
+</html>

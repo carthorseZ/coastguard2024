@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Deafult Site/Coastguard" />
+  <setParameter name="DBInterface.Properties.Settings.Connectionstring-Web.config Connection String" value="Data Source=(local);Initial Catalog=CoastGuard;Persist Security Info=True;User ID=coastguard;Password=(0astGuard;Application Name=CoastGuardFE" />
+  <setParameter name="DBInterface.Properties.Settings.Connectionstring-Deployment Connection String" value="Data Source=(local);Initial Catalog=CoastGuard;Persist Security Info=True;User ID=coastguard;Password=(0astGuard;Application Name=CoastGuardFE" />
+</parameters>
