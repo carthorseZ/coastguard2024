@@ -12,5 +12,3 @@ Debug
 /CoastGuardWeb/bin/DBInterface.pdb
 /CoastGuardWeb/bin/Utils.dll
 /CoastGuardWeb/bin/Utils.pdb
-*.config
-/.vs
