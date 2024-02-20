@@ -1,6 +1,5 @@
 Debug
-/.vs/
-/.vs/CoastGuard/config/applicationhost.config
+/.vs/CoastGuard/FileContentIndex
 /.vs/CoastGuard/v17/.suo
 /CoastGuardWeb/CoastGuardWeb.csproj.user
 /DB/CoastGuard.mdf

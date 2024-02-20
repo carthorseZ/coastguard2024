@@ -325,7 +325,7 @@ function setupForm() {
     $('#EngineStarboardOilAdded').val(ActivityDetails.EngineStarboardOilAdded);
 
     //newActivity.Crew = getCrewIds(crewSelected);
-    debugger;
+    //debugger;
     if (ActivityDetails.FirepumpStarted) $('#FirepumpStarted').val('Yes');
 
 
@@ -484,6 +484,10 @@ function drillOnchange(t) {
 function vesselOnchange(t) {
     //debugger;
     curVessel = t[t.selectedIndex];
+    vesselID = t.value;
+    top.BEGetEngineStartHours(t.value, -1);
+    //BEGetEngineStartHours.(curVessel.id, -1);
+
 }
 
 
@@ -710,11 +714,15 @@ Save_onclick();
 top.PopPage('FindActivities.htm');
 }
 
+
+
+
+
 function Save_onclick() {
     var newActivity = top.curActivity;
 
 
-    debugger;
+    //debugger;
     
     
     if (ModeAdd || newActivity == null || typeof (newActivity) == "undefined") {
@@ -995,7 +1003,7 @@ function isPassangerUpdated(id) {
 
 function Engines_onclick() {
     //debugger;
-
+    //top.BEGetEngineStartHours("6ddddca1-fe99-4fe7-8e78-b7922abf2c4a", -1);
     $("#EngineDiv").dialog({
         width: 'auto',
 
