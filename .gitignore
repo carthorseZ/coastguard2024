@@ -1,6 +1,4 @@
 Debug
-/.vs/CoastGuard/FileContentIndex
-/.vs/CoastGuard/v17/.suo
 /CoastGuardWeb/CoastGuardWeb.csproj.user
 /DB/CoastGuard.mdf
 /DB/CoastGuard.LDF
@@ -12,3 +10,5 @@ Debug
 /CoastGuardWeb/bin/DBInterface.pdb
 /CoastGuardWeb/bin/Utils.dll
 /CoastGuardWeb/bin/Utils.pdb
+# Visual Studo 2015 cache/options directory
+.vs/

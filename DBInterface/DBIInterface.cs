@@ -437,9 +437,10 @@ namespace DBInterface
 		public bool UpdateStatistics(Guid? unit)
 		{
 			string sql = string.Format("exec CalcNewTripStatistics");
-			
 
-			System.Data.SqlClient.SqlConnection sqlConn = new System.Data.SqlClient.SqlConnection(db.Connection.ConnectionString);
+            //ToDo something is removing password from db.Connection.ConnectionString, maybe Persist Security Info=True; is missing somewhere using property instead
+            //System.Data.SqlClient.SqlConnection sqlConn = new System.Data.SqlClient.SqlConnection(db.Connection.ConnectionString);
+            System.Data.SqlClient.SqlConnection sqlConn = new System.Data.SqlClient.SqlConnection(Properties.Settings.Default.CoastGuardConnectionString);
 			System.Data.SqlClient.SqlCommand sqlcmd = new System.Data.SqlClient.SqlCommand(sql, sqlConn);
 			
 			try
